@@ -1,0 +1,57 @@
+.header {
+    height: 72px;
+    background-color: #212121;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    
+    &__brand {
+        display: flex;
+        align-items: center;
+        padding-left: 24px;
+
+        &-logo {
+            background: url(/img/logo/icon-research-white.svg) 100% 100%/auto 100% no-repeat;
+            display: block;
+            height: 36px;
+            width: 36px;
+            margin-right: 16px;
+        }
+        &-title {
+            display: none;
+            font-family: "Roboto Mono", monospace;
+            color:#fff;
+            font-size: 1.6rem;
+            line-height: 1.5;
+            text-transform: uppercase;
+        }
+    }
+
+    &__nav {
+        display: inline-block;
+
+        &-list {
+            height: 72px;
+            display: flex;
+        }
+        
+        &-item {
+            display: flex;
+        }
+
+        &-link {
+            font-size: 1.6rem;
+            padding: 0 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-link:hover {
+            color:#fff!important;
+        }
+        &-list--cleared:hover &-link {
+            color:#9e9e9e;
+        }
+    }
+}
